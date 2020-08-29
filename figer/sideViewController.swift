@@ -26,6 +26,12 @@ class fingerGuessing2ViewController: UIViewController {
     var win:Int = 0
     var hpImage:[UIImageView] = []
     
+    var howHP:[UIImageView] = []
+    
+    
+    var color:UIColor = UIColor.systemGreen
+    var clear:UIColor = UIColor.clear
+    
     func resetColor(){
         myRound = 0
         pcRound = 0
@@ -33,12 +39,10 @@ class fingerGuessing2ViewController: UIViewController {
         pcWin = 3
         win = 0
         hpImage = []
-        myHp[0].backgroundColor = UIColor.systemGreen
-        myHp[1].backgroundColor = UIColor.systemGreen
-        myHp[2].backgroundColor = UIColor.systemGreen
-        pcHp[0].backgroundColor = UIColor.systemGreen
-        pcHp[1].backgroundColor = UIColor.systemGreen
-        pcHp[2].backgroundColor = UIColor.systemGreen
+        for i in 0...2{
+        myHp[i].backgroundColor = UIColor.systemGreen
+        pcHp[i].backgroundColor = UIColor.systemGreen
+        }
         backgoundImage.image = UIImage(named: "smile1")
         }
     
