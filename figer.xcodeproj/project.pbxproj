@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0006E9A424FA9EFE007CE4AF /* figerGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BB08A24F14AA6003601C4 /* figerGuessingViewController.swift */; };
 		000BB07724F01401003601C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BB07624F01401003601C4 /* AppDelegate.swift */; };
 		000BB07924F01401003601C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BB07824F01401003601C4 /* SceneDelegate.swift */; };
 		000BB07B24F01401003601C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BB07A24F01401003601C4 /* ViewController.swift */; };
 		000BB07E24F01401003601C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000BB07C24F01401003601C4 /* Main.storyboard */; };
 		000BB08024F01402003601C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000BB07F24F01402003601C4 /* Assets.xcassets */; };
 		000BB08324F01402003601C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000BB08124F01402003601C4 /* LaunchScreen.storyboard */; };
-		000BB08B24F14AA6003601C4 /* figerGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BB08A24F14AA6003601C4 /* figerGuessingViewController.swift */; };
-		000BB08D24F1761B003601C4 /* sideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000BB08C24F1761B003601C4 /* sideViewController.swift */; };
+		0039532324FA910200E99EF0 /* figerGuessing2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0039532224FA910200E99EF0 /* figerGuessing2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		000BB08224F01402003601C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		000BB08424F01402003601C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000BB08A24F14AA6003601C4 /* figerGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = figerGuessingViewController.swift; sourceTree = "<group>"; };
-		000BB08C24F1761B003601C4 /* sideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideViewController.swift; sourceTree = "<group>"; };
+		0039532224FA910200E99EF0 /* figerGuessing2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = figerGuessing2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				000BB07824F01401003601C4 /* SceneDelegate.swift */,
 				000BB07A24F01401003601C4 /* ViewController.swift */,
 				000BB07C24F01401003601C4 /* Main.storyboard */,
-				000BB08C24F1761B003601C4 /* sideViewController.swift */,
+				0039532224FA910200E99EF0 /* figerGuessing2ViewController.swift */,
 				000BB08A24F14AA6003601C4 /* figerGuessingViewController.swift */,
 				000BB07F24F01402003601C4 /* Assets.xcassets */,
 				000BB08124F01402003601C4 /* LaunchScreen.storyboard */,
@@ -145,9 +145,9 @@
 			files = (
 				000BB07B24F01401003601C4 /* ViewController.swift in Sources */,
 				000BB07724F01401003601C4 /* AppDelegate.swift in Sources */,
+				0039532324FA910200E99EF0 /* figerGuessing2ViewController.swift in Sources */,
+				0006E9A424FA9EFE007CE4AF /* figerGuessingViewController.swift in Sources */,
 				000BB07924F01401003601C4 /* SceneDelegate.swift in Sources */,
-				000BB08D24F1761B003601C4 /* sideViewController.swift in Sources */,
-				000BB08B24F14AA6003601C4 /* figerGuessingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +228,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -282,6 +284,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

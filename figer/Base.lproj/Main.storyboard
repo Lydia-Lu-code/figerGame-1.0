@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Figer Guessing-->
+        <!--figerGuessing-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="figerGuessingViewController" title="Figer Guessing" id="BYZ-38-t0r" customClass="figerGuessingViewController" customModule="figer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="figerGuessingViewController" title="figerGuessing" id="BYZ-38-t0r" customClass="figerGuessingViewController" customModule="figer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                                 <color key="textColor" red="0.83585695534111681" green="0.49381152124558664" blue="0.0013668969985745091" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="secondaryLabelColor"/>
-                                <size key="shadowOffset" width="1" height="-1"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" alignment="center" spacing="19.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hvh-2T-rUN">
                                 <rect key="frame" x="75" y="721" width="264" height="75"/>
@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="3647.826086956522" y="103.79464285714285"/>
         </scene>
-        <!--Finger Guessing2 View Controller-->
+        <!--figerGuessing2-->
         <scene sceneID="6ns-72-V2V">
             <objects>
-                <viewController storyboardIdentifier="fingerGuessing2ViewController" id="AaC-Dg-GvX" customClass="fingerGuessing2ViewController" customModule="figer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="figerGuessing2ViewController" title="figerGuessing2" id="AaC-Dg-GvX" customClass="figerGuessing2ViewController" customModule="figer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CF2-28-suE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,10 +162,14 @@
                                 <rect key="frame" x="253" y="120" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLP-Ou-wba">
+                                <rect key="frame" x="10" y="550" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9VL-8T-ILN">
                                 <rect key="frame" x="19.5" y="708" width="375" height="75"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hs-GB-iUb">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="0" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hs-GB-iUb">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="Fe7-2V-N0m"/>
@@ -181,10 +185,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="selectNumber:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="2eO-8z-1HY"/>
+                                            <action selector="figerBtn:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="2eO-8z-1HY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sML-fJ-Dqs">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sML-fJ-Dqs">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="9jO-hh-ZFu"/>
@@ -195,10 +199,10 @@
                                             <color key="titleColor" red="0.2020302533222057" green="0.022112356144796012" blue="0.2777998096446701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="selectNumber:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="qKB-9j-F5k"/>
+                                            <action selector="figerBtn:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="qKB-9j-F5k"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADo-fh-cSn">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="2" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADo-fh-cSn">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="DgK-X4-anb"/>
@@ -209,10 +213,10 @@
                                             <color key="titleColor" red="0.2020302533222057" green="0.022112356144796012" blue="0.2777998096446701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="selectNumber:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="hyB-S4-Rph"/>
+                                            <action selector="figerBtn:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="hyB-S4-Rph"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-fS-ads">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-fS-ads">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="E3y-d5-zN2"/>
@@ -223,10 +227,10 @@
                                             <color key="titleColor" red="0.2020302533222057" green="0.022112356144796012" blue="0.2777998096446701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="selectNumber:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="cWK-Rj-FRO"/>
+                                            <action selector="figerBtn:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="cWK-Rj-FRO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jev-lY-VLj">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="4" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jev-lY-VLj">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="Ldc-aD-UPo"/>
@@ -237,7 +241,7 @@
                                             <color key="titleColor" red="0.2020302533222057" green="0.022112356144796012" blue="0.2777998096446701" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="selectNumber:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="agJ-gF-nZl"/>
+                                            <action selector="figerBtn:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="agJ-gF-nZl"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -313,10 +317,6 @@
                                     <action selector="replayBtn:" destination="AaC-Dg-GvX" eventType="touchUpInside" id="7jU-Q3-j1a"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLP-Ou-wba">
-                                <rect key="frame" x="10" y="550" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGo-vT-aQ0">
                                 <rect key="frame" x="184" y="550" width="220" height="35"/>
                                 <constraints>
@@ -347,30 +347,30 @@
                         <outlet property="backgoundImage" destination="oYf-QE-MfD" id="gRK-Nq-ya0"/>
                         <outlet property="label" destination="CGo-vT-aQ0" id="iLm-Da-Sl8"/>
                         <outlet property="replayButton" destination="pJ8-fJ-0nQ" id="xJp-Yk-yfu"/>
-                        <outletCollection property="imageViews" destination="1Yu-hs-Fcx" collectionClass="NSMutableArray" id="tuf-xb-x2n"/>
-                        <outletCollection property="imageViews" destination="dLP-Ou-wba" collectionClass="NSMutableArray" id="yf1-We-oBa"/>
-                        <outletCollection property="sideButtons" destination="2hs-GB-iUb" collectionClass="NSMutableArray" id="X0c-li-kGL"/>
-                        <outletCollection property="sideButtons" destination="sML-fJ-Dqs" collectionClass="NSMutableArray" id="Gig-bh-MPL"/>
-                        <outletCollection property="sideButtons" destination="ADo-fh-cSn" collectionClass="NSMutableArray" id="u7G-zH-qmR"/>
-                        <outletCollection property="sideButtons" destination="6lk-fS-ads" collectionClass="NSMutableArray" id="ps3-Vp-qKr"/>
-                        <outletCollection property="sideButtons" destination="jev-lY-VLj" collectionClass="NSMutableArray" id="5OY-CZ-Lip"/>
+                        <outletCollection property="figerButtons" destination="2hs-GB-iUb" collectionClass="NSMutableArray" id="X0c-li-kGL"/>
+                        <outletCollection property="figerButtons" destination="sML-fJ-Dqs" collectionClass="NSMutableArray" id="Gig-bh-MPL"/>
+                        <outletCollection property="figerButtons" destination="ADo-fh-cSn" collectionClass="NSMutableArray" id="u7G-zH-qmR"/>
+                        <outletCollection property="figerButtons" destination="6lk-fS-ads" collectionClass="NSMutableArray" id="ps3-Vp-qKr"/>
+                        <outletCollection property="figerButtons" destination="jev-lY-VLj" collectionClass="NSMutableArray" id="5OY-CZ-Lip"/>
                         <outletCollection property="pcHp" destination="hdQ-rT-bTJ" collectionClass="NSMutableArray" id="FVm-Yc-87I"/>
                         <outletCollection property="pcHp" destination="KEy-Ey-PG9" collectionClass="NSMutableArray" id="Deq-Gn-gPv"/>
                         <outletCollection property="pcHp" destination="c1L-5a-ITB" collectionClass="NSMutableArray" id="YyV-oK-bRE"/>
                         <outletCollection property="myHp" destination="Rs1-RA-vcz" collectionClass="NSMutableArray" id="dEw-jP-eey"/>
                         <outletCollection property="myHp" destination="fhX-ZA-wAu" collectionClass="NSMutableArray" id="FoW-ep-bby"/>
                         <outletCollection property="myHp" destination="9ZE-GJ-geS" collectionClass="NSMutableArray" id="a3d-D9-aKP"/>
+                        <outletCollection property="imageViews" destination="1Yu-hs-Fcx" collectionClass="NSMutableArray" id="5fS-At-OCp"/>
+                        <outletCollection property="imageViews" destination="dLP-Ou-wba" collectionClass="NSMutableArray" id="bqk-oK-9UK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIM-gV-ydq" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3659.420289855073" y="866.51785714285711"/>
         </scene>
-        <!--SideSelect-->
+        <!--FingerGuessing2-->
         <scene sceneID="WRq-sU-K7h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OIW-qC-UOv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="SideSelect" id="Te9-6k-Ga0"/>
+                    <tabBarItem key="tabBarItem" title="FingerGuessing2" selectedImage="paperplane" catalog="system" id="Te9-6k-Ga0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UGf-jh-oP4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -389,7 +389,7 @@
         <scene sceneID="yQd-cK-LlS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DXW-U0-2Px" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FingerGuessing" id="IIZ-fS-pvu"/>
+                    <tabBarItem key="tabBarItem" title="FingerGuessing" selectedImage="paperplane.fill" catalog="system" id="IIZ-fS-pvu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W1d-Di-Jgp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -409,7 +409,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pri-TH-zOO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5mZ-3W-t8S">
+                    <tabBar key="tabBar" tag="-1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5mZ-3W-t8S">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -426,6 +426,8 @@
     </scenes>
     <resources>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
