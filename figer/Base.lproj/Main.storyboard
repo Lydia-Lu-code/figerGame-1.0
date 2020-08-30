@@ -81,7 +81,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <state key="normal" title="✌🏻"/>
                                         <connections>
-                                            <action selector="fingerBtns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kZ-i6-v97"/>
+                                            <action selector="figerBtns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kZ-i6-v97"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="rock" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2G-b3-cKF">
@@ -93,7 +93,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <state key="normal" title="✊🏻"/>
                                         <connections>
-                                            <action selector="fingerBtns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRr-XL-4OL"/>
+                                            <action selector="figerBtns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRr-XL-4OL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="paper" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG7-eU-nUX">
@@ -105,7 +105,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <state key="normal" title="✋🏻"/>
                                         <connections>
-                                            <action selector="fingerBtns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="soh-1h-U9e"/>
+                                            <action selector="figerBtns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="soh-1h-U9e"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -137,12 +137,13 @@
                         <outlet property="timeLabel" destination="Q0L-lg-hIH" id="5e7-sq-gnb"/>
                         <outletCollection property="imageView" destination="X00-Xq-P6p" collectionClass="NSMutableArray" id="QjO-tx-rsH"/>
                         <outletCollection property="imageView" destination="Gqb-AJ-NTn" collectionClass="NSMutableArray" id="Q4k-vd-aQh"/>
-                        <outletCollection property="fingerButtons" destination="LmW-f1-YUh" collectionClass="NSMutableArray" id="LAp-b7-Y71"/>
-                        <outletCollection property="fingerButtons" destination="c2G-b3-cKF" collectionClass="NSMutableArray" id="hdQ-p8-dOS"/>
-                        <outletCollection property="fingerButtons" destination="cG7-eU-nUX" collectionClass="NSMutableArray" id="p5t-gW-zpu"/>
+                        <outletCollection property="figerButtons" destination="LmW-f1-YUh" collectionClass="NSMutableArray" id="LAp-b7-Y71"/>
+                        <outletCollection property="figerButtons" destination="c2G-b3-cKF" collectionClass="NSMutableArray" id="hdQ-p8-dOS"/>
+                        <outletCollection property="figerButtons" destination="cG7-eU-nUX" collectionClass="NSMutableArray" id="p5t-gW-zpu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationItem id="9VT-jo-xDF"/>
             </objects>
             <point key="canvasLocation" x="3647.826086956522" y="103.79464285714285"/>
         </scene>

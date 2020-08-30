@@ -32,7 +32,6 @@ class figerGuessing2ViewController: UIViewController {
     var messages:String = ""
     
     func changeHp(){
-        
         if whoHP == pcHp{
             whoCount = pcCount - 1
             pcCount = whoCount
@@ -71,17 +70,14 @@ class figerGuessing2ViewController: UIViewController {
             
             for x in index...2{
                 whoHP[x].backgroundColor = nil
+                
                 if index == 0{
-                    
                     let alert = UIAlertController(title: title1, message: messages, preferredStyle: .actionSheet)
-//                    let action = UIAlertAction(title: "繼續!", style: .cancel, handler: nil)
                     let action = UIAlertAction(title: "繼續!", style: .cancel) { (_) in
                         self.viewDidLoad()
                     }
                         alert.addAction(action)
                         present(alert, animated: false, completion: nil)
-                    
-                        
                     }
                 }
         }
@@ -107,8 +103,7 @@ class figerGuessing2ViewController: UIViewController {
     }
     
     @IBAction func figerBtn(_ sender: UIButton) {
-//        viewDidLoad()
-        
+
         switch sender{
             case figerButtons[0]: imageName1 = "one"; myRound = 1
             case figerButtons[1]: imageName1 = "scissors"; myRound = 2
@@ -134,34 +129,27 @@ class figerGuessing2ViewController: UIViewController {
             label.text = "winner"
             whoHP = pcHp
             changeHp()
-        
         }else if (myRound == 1 && pcRound == 5){
             label.text = "winner"
             whoHP = pcHp
             changeHp()
-
         }else if (myRound == pcRound - 1){
             label.text = "lose"
             whoHP = myHp
             changeHp()
-            
         }else if (myRound == 5 && pcRound == 1){
             label.text = "lose"
             whoHP = myHp
             changeHp()
-
         }else{
             label.text = "safe"
-            print("safe m=p")
             }
         }
     
     @IBAction func replayBtn(_ sender: UIButton) {
-        print("遊戲重新開始")
         viewDidLoad()
     }
-    
-    
+
     /*
     // MARK: - Navigation
 
